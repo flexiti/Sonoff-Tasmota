@@ -1,14 +1,17 @@
-<img src="/tools/logo/TASMOTA_FullLogo_Vector.svg" alt="Logo" align="right" height="76"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./tools/logo/TASMOTA_FullLogo_Vector_White.svg">
+  <img alt="Logo" src="./tools/logo/TASMOTA_FullLogo_Vector.svg" align="right" height="76">
+</picture>
 
 # Contributing
 
 **Any contribution helps our team and makes Tasmota better for the entire community!**
 
-Everybody is welcome and invited to contribute to Sonoff-Tasmota Project by:
+Everybody is welcome and invited to contribute to Tasmota Project by:
 
 * Testing newly released features and reporting issues.
 * Providing Pull Requests (Features, Proof of Concepts, Language files or Fixes)
-* Contributing missing documentation for features and devices on our [Wiki](https://github.com/arendst/Sonoff-Tasmota/wiki/Contributing)
+* Contributing missing documentation for features and devices in our [documentation](https://tasmota.github.io/docs/Contributing)
 
 This document describes rules that are in effect for this repository, meant for handling issues by contributors in the issue tracker and PRs.
 
@@ -44,16 +47,16 @@ A Pull Request (PR) is the process where code modifications are managed in GitHu
 The process is straight-forward.
 
  - Read [How to get faster PR reviews](https://github.com/kubernetes/community/blob/master/contributors/guide/pull-requests.md#best-practices-for-faster-reviews) by Kubernetes (but skip step 0)
- - Fork the Sonoff-Tasmota Repository [git repository](https://github.com/arendst/Sonoff-Tasmota).
+ - Fork the Tasmota Repository [git repository](https://github.com/arendst/Tasmota).
  - Write/Change the code in your Fork for a new feature, bug fix, new sensor, optimization, etc.
  - Ensure tests work.
- - Create a Pull Request against the [**dev**](https://github.com/arendst/Sonoff-Tasmota/tree/dev) branch of Sonoff-Tasmota.
+ - Create a Pull Request against the [**development**](https://github.com/arendst/Tasmota/tree/development) branch of Tasmota.
 
-1. All pull requests must be done against the dev branch.
+1. All pull requests must be done against the development branch.
 2. Only relevant files should be touched (Also beware if your editor has auto-formatting feature enabled).
 3. Only one feature/fix should be added per PR.
 4. If adding a new functionality (new hardware, new library support) not related to an existing component move it to it's own modules (.ino file).
-5. PRs that don't compile (break Travis) or cause coding errors will not be merged. Please fix the issue. Same goes for PRs that are raised against older commit in dev - you might need to rebase and resolve conflicts.
+5. PRs that don't compile (fail in CI Tests) or cause coding errors will not be merged. Please fix the issue. Same goes for PRs that are raised against older commit in development - you might need to rebase and resolve conflicts.
 6. All pull requests should undergo peer review by at least one contributor other than the creator, excepts for the owner.
 7. All pull requests should consider updates to the documentation.
 8. Pull requests that address an outstanding issue, particularly an issue deemed to be severe, should be given priority.
@@ -96,7 +99,7 @@ To accept the CLA it is required to put a x between [ ] on `[ ] I accept the CLA
 
 **Why a CLA ?**
 
-_"A Contributor Licence Agreement (CLA) is strongly recommended when accepting third party contributions to an open development project, such as an open source software project. In order to redistribute contributions, it is necessary to ensure that the project has the necessary rights to do so. A Contributor Licence Agreement is a lightweight agreement, signed by the copyright holder, that grants the necessary rights for the contribution to be redistributed as part of the project."_ [OSS Watch](http://oss-watch.ac.uk/resources/cla)
+_"A Contributor License Agreement (CLA) is strongly recommended when accepting third party contributions to an open development project, such as an open source software project. In order to redistribute contributions, it is necessary to ensure that the project has the necessary rights to do so. A Contributor License Agreement is a lightweight agreement, signed by the copyright holder, that grants the necessary rights for the contribution to be redistributed as part of the project."_ [OSS Watch](http://oss-watch.ac.uk/resources/cla)
 
 A CLA is a legal document in which you state _you are entitled to contribute the code/documentation/translation to the project_ you’re contributing to and that _you are willing to have it used in distributions and derivative works_. This means that should there be any kind of legal issue in the future as to the origins and ownership of any particular piece of code, then that project has the necessary forms on file from the contributor(s) saying they were permitted to make this contribution.
 
